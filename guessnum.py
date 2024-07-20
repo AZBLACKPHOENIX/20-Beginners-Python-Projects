@@ -7,7 +7,7 @@ compprompt = input("Would You Like To Play With Me\n Enter Yes To Play With Comp
 
 #Use if statement
 if compprompt=="Yes":
-    #Use while loop to play the game until the correct value
+    #Use while loop to play the game until the user or com gets the correct value
     while (True):
         response = [
             "I lost",

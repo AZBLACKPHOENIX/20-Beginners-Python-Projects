@@ -1,13 +1,13 @@
-import random
-print("PHOENIX PYTHON GENERATOR")
-chars = "QWERTYUIOP[]ASDFGHJKL;\ZXCVBNM/asdfghjklqwertyuiopzxcvbnm&%$#@"
-num=int(input("Enter the number of passwords:"))
-lenofpass=int(input("Enter the length of the password(s):"))
-print("Here are your passwords")
-for pwd in range(num):
+import random 
+import string
+
+chars = string.ascii_letters + string.digits + string.punctuation
+print("PHOENIX PYTHON PASSWORD GENERATOR")
+num = int(input("Enter The Number Of Passwords::"))
+lenpass = int(input("Enter Length Of Password(s)::"))
+for i in range(num):
     passwords=''
-    for i in range(lenofpass):
-        passwords += random.choice(chars)
-    print(f"===============PASSWORD {pwd}================")
+    for j in range(lenpass):
+        passwords+=random.choice(chars)
+    print(f"=========PASSWORD {i}============")
     print(passwords)
-    print("========================================")

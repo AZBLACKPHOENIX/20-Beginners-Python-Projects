@@ -9,5 +9,5 @@ for i in range(num):
     passwords=''
     for j in range(lenpass):
         passwords+=random.choice(chars)
-    print(f"=========PASSWORD {i}============")
+    print(f"=========PASSWORD {i+1}============")
     print(passwords)

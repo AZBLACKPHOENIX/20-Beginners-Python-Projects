@@ -7,8 +7,6 @@ def countdown(t):
         print(timer, end='\r')
         time.sleep(1)
         t-=1
-    
     print("Timer Completed!")
-
 t = input("Enter Time In Seconds:")
 countdown(int(t))
